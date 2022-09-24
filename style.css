@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Fira sans', sans-serif;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-color: #374151;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  color: #6B7280;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+header form {
+  display: flex;
+}
+
+input, button {
+  border: none;
+  background: none;
+  appearance: none;
+  outline: none;
+}
+
+#new-task-input {
+  flex: 1 1 0%;
+  background-color: #1F2937;
+  border-radius: 15px;
+  padding: 14px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+#new-task-submit {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #099773, #43B692); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#new-task-submit:hover {
+  opacity: 0.8;
+}
+
+main .task-list {
+  padding: 15px;
+}
+
+.task-list h2{
+  color: #6B7280;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#tasks .task{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111827;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+#tasks .task .content  {
+  flex: 1 1 0%;
+}
+
+#tasks .task .content .text{
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  transition: .4s;
+}
+
+#tasks .task .content .text:not(:read-only){
+  color: #43B692; 
+}
+
+#tasks .task .actions {
+  display: flex;
+  margin: 0 -8px;
+}
+
+#tasks .task .actions button{
+  cursor: pointer;
+  margin: 0 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: .4s;
+}
+
+#tasks .task .actions button:hover{
+  opacity: 0.8;
+}
+
+#tasks .task .actions .edit{
+  background-image: linear-gradient(to right, #F0EAFC, #61CEF2); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#tasks .task .actions .delete{
+  color: crimson;
+}
+
+#go-to-top {
+  position: fixed;
+  right: -100px;
+  bottom: 50px;
+  padding: 10px;
+  background-image: linear-gradient(to right, #099773, #43B692); 
+  border-radius: 5px;
+  width: fit-content;
+  cursor: pointer;
+  transition: .4s;
+}
+
+#go-to-top:hover {
+  opacity: 0.8;
+}
