@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #14101f;
+  font-family: Tahoma, Arial;
+  /* height: 100vh; */
+}
+
+.container {
+  width: 800px;
+  padding: 20px;
+  background-color: #25203a;
+  border-radius: 10px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  margin: 200px auto;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header input {
+  outline: none;
+  width: 600px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  caret-color: #34a4ea;
+}
+
+button {
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.header #add {
+  background-color: #575bd5;
+  padding: 5px 30px;
+}
+
+
+.tasks-container  {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tasks-container .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34a4ea;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 15px;
+  color: #fff;
+}
+
+.tasks-container .task input {
+  outline: none;
+  width: calc(100% - 100px);
+  padding: 10px;
+  border: none;
+
+}
+
+
+.tasks-container .task .task-name {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+.tasks-container .task .edit {
+  background-color: #575bd5;
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+
+.tasks-container .task .del {
+  background-color: #df4759;
+  padding: 5px 15px;
+}
+
+
+.go-to-top {
+  background-color: #34a4ea;
+  padding: 8px;
+  font-size: 20px;
+  position: fixed;
+  right: 10px;
+  bottom: -100px;
+  transition: .3s;
+}
+
+.go-to-top:hover {
+  background-color: #1d78b0;
+}
+
+.show-button {
+  bottom: 25px;
+}
